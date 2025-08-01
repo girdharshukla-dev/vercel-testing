@@ -10,6 +10,6 @@ app.use(express.json());
 
 app.use("/home" , test)
 
-app.listen(8000);
+app.listen(3000);
 
 module.exports = app
