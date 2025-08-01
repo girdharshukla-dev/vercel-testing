@@ -13,7 +13,7 @@ const cookieTest = async (req, resp) => {
 
     const hashed = await bcryptjs.hash(cookie, 12)
 
-    return resp.json({ result: hashed })
+    return resp.json({ result: hashed , secret : process.env.secret })
 }
 
 module.exports = {

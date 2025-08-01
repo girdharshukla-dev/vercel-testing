@@ -5,7 +5,7 @@ function dumbCookieSetter(req, res, next) {
     sameSite: 'Strict',
     maxAge: 60 * 60 * 1000, // 1 hour
   })
-  console.log('[DUMB] Set dumb_cookie 🍪')
+  console.log('[DUMB] Set dumb_cookie')
   next()
 }
 
